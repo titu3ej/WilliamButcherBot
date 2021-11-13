@@ -109,7 +109,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                url="https://github.com/titu3ej/WilliamButcherBot",
             ),
         ],
         [
@@ -118,7 +118,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/WBBSupport"
+                text="Support 👨", url="https://t.me/thundergotechnology"
             ),
         ],
         [
@@ -146,7 +146,7 @@ keyboard = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                url="https://github.com/titu3ej/WilliamButcherBot",
             ),
         ],
         [
@@ -164,7 +164,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != "private":
         return await message.reply(
-            "Pm Me For More Details.", reply_markup=keyboard
+            "Hey I am Alive! Care to join our Suppoert Group", reply_markup=keyboard
         )
     if len(message.text.split()) > 1:
         name = (message.text.split(None, 1)[1]).lower()
@@ -219,7 +219,7 @@ async def help_command(_, message):
                 )
         else:
             await message.reply(
-                "Pm Me For More Details.", reply_markup=keyboard
+                "Hey I am Alive! Care to join our support channel?", reply_markup=keyboard
             )
     else:
         if len(message.command) >= 2:
